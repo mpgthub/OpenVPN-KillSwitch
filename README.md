@@ -12,14 +12,16 @@ The methods described below are generic and valid for any kind of OpenVPN connec
 It was tested with CyberGhost and NordVPN on Xubuntu 20.04 desktop (Xfce).
 
 
-Step 1 - Get your .ovpn configuration file from a VPN provider
+
+**Step 1 - Get your .ovpn configuration file from a VPN provider**
 
 Get your .ovpn configuration file from VPN provider. Make sure you have correct credentials. You can see them through provider's web site when you are logged in.
 Vpn credentials are not the same like your account login credentials! It's important to get tcp .ovpn file and not udp. Cyberghost are TCP by default.
 In order to prevent dns leaks, you need to add this line to .ovpn file (if it's not there already):
 block-outside-dns
 
-Step 2 - Install OpenVPN. I used Xubuntu 20.04 desktop (Xfce)
+
+**Step 2 - Install OpenVPN. I used Xubuntu 20.04 desktop (Xfce)**
 ```
 sudo apt-get install openvpn  
 sudo apt-get install network-manager-openvpn  
@@ -34,7 +36,8 @@ sudo apt-get install network-manager-openvpn-gnome
 - Go back to network manager and open your wired network properties -> General, and then tick "Automatically connect to vpn" and choose your vpn connection from the list. Press Save.
 This will auto connect to vpn every time your local network is connected. Eg. after reboot. This is not the killswitch! If vpn drops, local connection works normally.
 
-Step 3 - Configure "killswitch", so only VPN traffic is allowed to reach Internet. If the VPN connection drops = No internet access.
+
+**Step 3 - Configure "killswitch", so only VPN traffic is allowed to reach Internet. If the VPN connection drops = No internet access.**
 
 Make sure you have ufw (Uncomplicated Firewall) installed:
 ```
@@ -49,7 +52,8 @@ Add entry to crontab so rules will be loaded on boot:
 @reboot root /home/user/openvpn-killswitch-ufw.sh
 ```
 
-Useful commands:
+
+*Useful ufw commands:*
 
 Run this command to see the active ufw rules:
 ```
@@ -66,11 +70,13 @@ Service restart (will remove all rules):
 sudo service ufw restart
 ```
 
-Useful tip:  
+
+*Useful tip:  *
 Install this Firefox (and Chrome) addon to see your public IP (and flag) on browser toolbar:  
 https://addons.mozilla.org/en-US/firefox/addon/public-ip-display/
 
-Useful links:
+
+*Useful links:*
 
 Dns leak test - You must check it after you finish configuring your VPN connection:  
 https://www.dnsleaktest.com  
