@@ -38,7 +38,7 @@ Step 3 - Configure "killswitch", so only VPN traffic is allowed to reach Interne
 
 Make sure you have ufw (Uncomplicated Firewall) installed:
 ```
-apt install ufw
+sudo apt install ufw
 ```
 ufw is firewall, similar to iptables. Set of specific firewall rules will make sure "killswitch" is enforced.
 Basically, you block all Internet access for your local connection (except access to VPN server(s) on port 443). And allow only VPN (tun0) connection to reach Internet.
@@ -58,12 +58,12 @@ sudo ufw status verbose
 
 Reset the ufw config (remove all rules):
 ```
-ufw --force reset
+sudo ufw --force reset
 ```
 
 Service restart (will remove all rules):
 ```
-service ufw restart
+sudo service ufw restart
 ```
 
 Useful tip:  
@@ -72,12 +72,12 @@ https://addons.mozilla.org/en-US/firefox/addon/public-ip-display/
 
 Useful links:
 
-Dns leak test - You must check it after you finish configuring your VPN connection:
-https://www.dnsleaktest.com
-https://dnsleak.com
+Dns leak test - You must check it after you finish configuring your VPN connection:  
+https://www.dnsleaktest.com  
+https://dnsleak.com  
 
-WebRTC leak test:
-https://browserleaks.com/webrtc
-https://www.expressvpn.com/webrtc-leak-test
+WebRTC leak test:  
+https://browserleaks.com/webrtc  
+https://www.expressvpn.com/webrtc-leak-test  
 
 
