@@ -28,7 +28,8 @@ sudo apt-get install openvpn
 sudo apt-get install network-manager-openvpn  
 sudo apt-get install network-manager-openvpn-gnome
 ```
-- Right-click Network Manager in the System Tray, select Edit
+- Right-click Network Manager in the System Tray, select Edit Connections  
+![Alt text](/images/killswitch-tut-01.jpg?raw=true "Network Manager")
 - Click on "Add" (Or a "Plus" button) and then "Import a saved VPN configuration"
 - Choose your .ovpn file. Preferably TCP and not UDP. In most cases, UDP works slow in Ubuntu. If your file came with other files (certificates), keep them all in the same folder.
 - Most .ovpn TCP files come with port 443. You can check it in .ovpn file.
