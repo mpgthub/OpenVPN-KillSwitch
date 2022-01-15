@@ -39,8 +39,8 @@ sudo apt-get install network-manager-openvpn-gnome
 - In the "advanced" tab, Make sure you tick "use TCP connection". At the end, press save.
 ![Alt text](/images/killswitch-tut-04.jpg?raw=true "Advanced")
 ![Alt text](/images/killswitch-tut-05.jpg?raw=true "TCP Connection")
-- Go back to network manager and open your wired network properties -> General, and then tick "Automatically connect to vpn" and choose your vpn connection from the list. Press Save.  
-![Alt text](/images/killswitch-tut-06.jpg?raw=true "Automatically connect to vpn")
+- Go back to network manager and open your wired network properties -> General, and then tick "Automatically connect to vpn" and choose your vpn connection from the list. Press Save.    
+![Alt text](/images/killswitch-tut-06.jpg?raw=true "Automatically connect to vpn")  
 This will auto connect to vpn every time your local network is connected. Eg. after reboot. This is not the killswitch! If vpn drops, local connection works normally.
 
 <br />
