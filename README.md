@@ -11,8 +11,8 @@ This will describe the following processes:
 The methods described below are generic and valid for any kind of OpenVPN connection.   
 It was tested with CyberGhost and NordVPN on Xubuntu 20.04 desktop (Xfce).
 
-&NewLine;
-&NewLine;
+<br />
+<br />
 
 **Step 1 - Get your .ovpn configuration file from a VPN provider**
 
