@@ -31,11 +31,16 @@ sudo apt-get install network-manager-openvpn-gnome
 - Right-click Network Manager in the System Tray, select Edit Connections  
 ![Alt text](/images/killswitch-tut-01.jpg?raw=true "Network Manager")
 - Click on "Add" (Or a "Plus" button) and then "Import a saved VPN configuration"
+![Alt text](/images/killswitch-tut-02.jpg?raw=true "Network Manager")
+![Alt text](/images/killswitch-tut-03.jpg?raw=true "Network Manager")
 - Choose your .ovpn file. Preferably TCP and not UDP. In most cases, UDP works slow in Ubuntu. If your file came with other files (certificates), keep them all in the same folder.
 - Most .ovpn TCP files come with port 443. You can check it in .ovpn file.
 - In the vpn details window, make sure your vpn IP (gateway) is IP and not url/dyndns. In most TCP vpns, port will be 443. Then fill your openvpn user/password.
 - In the "advanced" tab, Make sure you tick "use TCP connection". At the end, press save.
+![Alt text](/images/killswitch-tut-04.jpg?raw=true "Network Manager")
+![Alt text](/images/killswitch-tut-05.jpg?raw=true "Network Manager")
 - Go back to network manager and open your wired network properties -> General, and then tick "Automatically connect to vpn" and choose your vpn connection from the list. Press Save.
+![Alt text](/images/killswitch-tut-06.jpg?raw=true "Network Manager")
 This will auto connect to vpn every time your local network is connected. Eg. after reboot. This is not the killswitch! If vpn drops, local connection works normally.
 
 <br />
