@@ -75,7 +75,7 @@ sudo service ufw restart
 
 <br />
 
-*Useful tip:  *
+*Useful tip:*  
 Install this Firefox (and Chrome) addon to see your public IP (and flag) on browser toolbar:  
 https://addons.mozilla.org/en-US/firefox/addon/public-ip-display/
 
