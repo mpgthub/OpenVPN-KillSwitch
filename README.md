@@ -8,7 +8,7 @@ This will describe the following processes:
 - Import and secure .ovpn profile file.
 - Setup killswitch feature.
 
-The methods described below are generic and valid for any kind of OpenVPN connection. 
+The methods described below are generic and valid for any kind of OpenVPN connection.   
 It was tested with CyberGhost and NordVPN on Xubuntu 20.04 desktop (Xfce).
 
 
@@ -66,8 +66,8 @@ Service restart (will remove all rules):
 service ufw restart
 ```
 
-Useful tip:
-Install this Firefox (and Chrome) addon to see your public IP (and flag) on browser toolbar:
+Useful tip:  
+Install this Firefox (and Chrome) addon to see your public IP (and flag) on browser toolbar:  
 https://addons.mozilla.org/en-US/firefox/addon/public-ip-display/
 
 Useful links:
