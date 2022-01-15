@@ -9,6 +9,5 @@ This will describe the following processes:
 3. Setup killswitch feature.
 
 The methods described below are generic and valid for any kind of OpenVPN connection. 
-
 It was tested with CyberGhost and NordVPN on Xubuntu 20.04 desktop (Xfce).
 
