@@ -12,6 +12,7 @@ The methods described below are generic and valid for any kind of OpenVPN connec
 It was tested with CyberGhost and NordVPN on Xubuntu 20.04 desktop (Xfce).
 
 <br />
+
 **Step 1 - Get your .ovpn configuration file from a VPN provider**
 
 Get your .ovpn configuration file from VPN provider. Make sure you have correct credentials. You can see them through provider's web site when you are logged in.
@@ -20,6 +21,7 @@ In order to prevent dns leaks, you need to add this line to .ovpn file (if it's 
 block-outside-dns
 
 <br />
+
 **Step 2 - Install OpenVPN. I used Xubuntu 20.04 desktop (Xfce)**
 ```
 sudo apt-get install openvpn  
@@ -36,6 +38,7 @@ sudo apt-get install network-manager-openvpn-gnome
 This will auto connect to vpn every time your local network is connected. Eg. after reboot. This is not the killswitch! If vpn drops, local connection works normally.
 
 <br />
+
 **Step 3 - Configure "killswitch", so only VPN traffic is allowed to reach Internet. If the VPN connection drops = No internet access.**
 
 Make sure you have ufw (Uncomplicated Firewall) installed:
