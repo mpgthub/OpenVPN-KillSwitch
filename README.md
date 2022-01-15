@@ -54,6 +54,7 @@ Add entry to crontab so rules will be loaded on boot:
 @reboot root /home/user/openvpn-killswitch-ufw.sh
 ```
 
+<br />
 
 *Useful ufw commands:*
 
@@ -72,11 +73,13 @@ Service restart (will remove all rules):
 sudo service ufw restart
 ```
 
+<br />
 
 *Useful tip:  *
 Install this Firefox (and Chrome) addon to see your public IP (and flag) on browser toolbar:  
 https://addons.mozilla.org/en-US/firefox/addon/public-ip-display/
 
+<br />
 
 *Useful links:*
 
