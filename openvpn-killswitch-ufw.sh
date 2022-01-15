@@ -29,7 +29,7 @@ ufw allow in on eth0 from any port 443
 # ufw allow out from any to any port 53
 
 # Enable the firewall
-ufw --force enable
+ufw --force enable  
 
 
 
