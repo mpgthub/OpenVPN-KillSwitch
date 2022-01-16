@@ -49,7 +49,7 @@ This will auto connect to vpn every time your local network is connected. Eg. af
 
 Make sure you have ufw (Uncomplicated Firewall) installed:
 ```
-sudo apt install ufw
+sudo apt-get install ufw
 ```
 ufw is firewall, similar to iptables. Set of specific firewall rules will make sure "killswitch" is enforced.
 Basically, you block all Internet access for your local connection (except access to VPN server(s) on port 443). And allow only VPN (tun0) connection to reach Internet.
