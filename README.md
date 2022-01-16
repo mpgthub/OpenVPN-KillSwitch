@@ -55,6 +55,10 @@ ufw is firewall, similar to iptables. Set of specific firewall rules will make s
 Basically, you block all Internet access for your local connection (except access to VPN server(s) on port 443). And allow only VPN (tun0) connection to reach Internet.
 Edit the script ["openvpn-killswitch-ufw.sh"](openvpn-killswitch-ufw.sh) according to your needs. The script is self explanatory and contains all neccesary comments.  
 First time run it manually. Don't forget to "chmod 0755"
+```
+chmod +x openvpn-killswitch-ufw.sh
+./openvpn-killswitch-ufw.sh
+```
 
 Add entry to crontab so rules will be loaded on boot:
 ```
