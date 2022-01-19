@@ -16,7 +16,7 @@ It was tested with CyberGhost and NordVPN on Xubuntu 20.04 desktop (Xfce).
 **Step 1 - Get your .ovpn configuration file from a VPN provider**
 
 Get your .ovpn configuration file from VPN provider. Make sure you have correct credentials. You can see them through provider's web site when you are logged in.
-Vpn credentials are not the same like your account login credentials! It's recommended to get tcp .ovpn file and not udp. In most cases, UDP works slow in Ubuntu. Cyberghost are TCP by default.
+Vpn credentials are not the same like your account login credentials! It's recommended to get tcp .ovpn file and not udp. In most cases, UDP works slow in Ubuntu. Cyberghost are TCP by default.  
 In order to prevent dns leaks, you need to add this line to .ovpn file (if it's not there already):
 ```
 block-outside-dns
