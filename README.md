@@ -16,9 +16,11 @@ It was tested with CyberGhost and NordVPN on Xubuntu 20.04 desktop (Xfce).
 **Step 1 - Get your .ovpn configuration file from a VPN provider**
 
 Get your .ovpn configuration file from VPN provider. Make sure you have correct credentials. You can see them through provider's web site when you are logged in.
-Vpn credentials are not the same like your account login credentials! It's important to get tcp .ovpn file and not udp. Cyberghost are TCP by default.
+Vpn credentials are not the same like your account login credentials! It's recommended to get tcp .ovpn file and not udp. In most cases, UDP works slow in Ubuntu. Cyberghost are TCP by default.
 In order to prevent dns leaks, you need to add this line to .ovpn file (if it's not there already):
+```
 block-outside-dns
+```
 
 <br />
 
@@ -33,7 +35,7 @@ sudo apt-get install network-manager-openvpn-gnome
 - Click on "Add" (Or a "Plus" button) and then "Import a saved VPN configuration"
 ![Alt text](/images/killswitch-tut-02.jpg?raw=true "Network Connections")
 ![Alt text](/images/killswitch-tut-03.jpg?raw=true "Import Connection")
-- Choose your .ovpn file. Preferably TCP and not UDP. In most cases, UDP works slow in Ubuntu. If your file came with other files (certificates), keep them all in the same folder.
+- Choose your .ovpn file. Preferably TCP and not UDP. If your file came with other files (certificates), keep them all in the same folder.
 - Most .ovpn TCP files come with port 443. You can check it in .ovpn file.
 - In the vpn details window, make sure your vpn IP (gateway) is IP and not url/dyndns. In most TCP vpns, port will be 443. Then fill your openvpn user/password.
 - In the "advanced" tab, Make sure you tick "use TCP connection". At the end, press save.
