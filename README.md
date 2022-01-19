@@ -1,5 +1,5 @@
 # OpenVPN-KillSwitch
-Setup OpenVPN killswitch on Ubuntu desktop.
+Setup OpenVPN (with gui) and killswitch configuration on Ubuntu desktop.
 The purpose of this project is to setup secure and private access to the Internet from Ubuntu desktop.
 
 This will describe the following processes:
