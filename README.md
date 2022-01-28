@@ -37,7 +37,12 @@ sudo apt-get install network-manager-openvpn-gnome
 ![Alt text](/images/killswitch-tut-03.jpg?raw=true "Import Connection")
 - Choose your .ovpn file. Preferably TCP and not UDP. If your file came with other files (certificates), keep them all in the same folder.
 - Most .ovpn TCP files come with port 443. You can check it in .ovpn file (line that starts with a word "remote" contains your VPN connection IP/Url and a port).
-- In the vpn details window, make sure your vpn IP (gateway) is IP and not url/dyndns. In most TCP vpns, port will be 443. Then fill your openvpn user/password.
+- In the vpn details window, make sure your vpn IP (gateway) is IP and not url/dyndns. If it's not provided as IP address, you can find it with "host" command:
+```
+host ar37.nordvpn.com
+ar37.nordvpn.com has address 131.255.4.89
+```
+In most TCP vpns, port will be 443. Then fill your openvpn user/password.
 - In the "advanced" tab, Make sure you tick "use TCP connection". At the end, press save.
 ![Alt text](/images/killswitch-tut-04.jpg?raw=true "Advanced")
 ![Alt text](/images/killswitch-tut-05.jpg?raw=true "TCP Connection")
