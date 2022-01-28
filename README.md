@@ -59,7 +59,7 @@ Make sure you have ufw (Uncomplicated Firewall) installed:
 sudo apt-get install ufw
 ```
 ufw is firewall, similar to iptables. Set of specific firewall rules will make sure "killswitch" is enforced.
-Basically, you block all Internet access for your local connection (except access to VPN server(s) on port 443). And allow only VPN (tun0) connection to reach Internet.
+Basically, you block all Internet access for your local connection (except access to VPN server(s) on port 443). And allow only VPN (tun0) connection to reach Internet.  
 Edit the script ["openvpn-killswitch-ufw.sh"](openvpn-killswitch-ufw.sh) according to your needs. The script is self explanatory and contains all neccesary comments.  
 *OPTIONAL: For those that prefer to do it with iptables, here is the script with iptables rules: ["openvpn-killswitch-iptables.sh"](openvpn-killswitch-iptables.sh)*  
 
