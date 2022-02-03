@@ -68,7 +68,7 @@ Edit the script ["openvpn-killswitch-ufw.sh"](openvpn-killswitch-ufw.sh) accordi
 First time run it manually. Don't forget to "chmod"
 ```
 chmod +x openvpn-killswitch-ufw.sh
-./openvpn-killswitch-ufw.sh
+sudo ./openvpn-killswitch-ufw.sh
 ```
 
 Add entry to crontab so rules will be loaded on boot:
